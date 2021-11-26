@@ -1,5 +1,5 @@
 import React from "react";
-const  Test=()=>{
+const Academy=()=>{
     return(
         <div className="container">
         <h1 className="text-center" style={{paddingTop:"30%"}}>  
@@ -10,4 +10,4 @@ const  Test=()=>{
 
     )
 }
-export default Test;
+export default Academy;

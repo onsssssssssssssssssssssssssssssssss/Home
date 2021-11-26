@@ -5,38 +5,41 @@ import { BrowserRouter as Router,
    import Contact from "./pages/contact/Contact";
    import home from "./pages/home/home";
    import Service from "./pages/service/Service";
-   import Test from "./pages/testmonnai/Testmonnais";
-   import Navbar from './pages/navbar/Navbar';
-   import Slider from './pages/slider/Slider'
+      import Navbar from './pages/navbar/Navbar';
+   import Slider from './pages/slider/Slider';
    import 'bootstrap/dist/css/bootstrap.min.css';
 import Section2 from './pages/section2/Section2';
-
 import Call from './pages/CALLACTION/Call';
 import Skils from './pages/skills/Skils';
 import Facts from './pages/facts/Facts';
 import Partner from './pages/partner/Partner';
 import Footer from './pages/footer/Footer';
+import Test from "./pages/testmonnai/Testmonnais"
 
 const App = ()=>
  {
  return (
-    <><Router>
-     <Navbar />
+    <>
+     <Navbar/>
+     <Router>
      <Switch>
-       <Route path="/Contact" exact component={Contact} />
-       <Route path="/About" component={About} />
-       <Route path="/home" component={home} />
-       <Route path="/Service" component={Service} />
-       <Route path="/Test" component={Test} />
-     </Switch>
-   </Router>
-   <Slider />
+       <Route exact path="/Contact" exact component={Contact} />
+       <Route exact path="/About" component={About} />
+       <Route exact path="/Service" component={Service} />
+       <Route exact path="/testmonnai" component={Test} />
+       <Route path="/">
+       <Slider/>
    <Section2/>
    <Call/>
    <Skils/>
    <Facts/>
    <Partner/>
-   <Footer/></>
+       </Route>
+       </Switch>
+   
+   <Footer/>  
+    </Router>
+</>
 
   );
 }

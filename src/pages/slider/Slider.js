@@ -2,6 +2,7 @@ import React from 'react';
 import 'react-slideshow-image/dist/styles.css'
 import { Slide } from 'react-slideshow-image';
 import './slide.css';
+import { Link } from 'react-router-dom';
 const slideImages = [
  ' ../../img//intro-carousel/one.jpg',
   '../../img//intro-carousel/2.jpg',
@@ -29,7 +30,7 @@ const Slider = () => {
               <div class="carousel-content">
                 <h2>Anoha Academy </h2>
                 <p>  develop your skills , guide your journey in order  to attend your  potential and reach the aims you want</p>
-                <a href="navbar/index.html" class="btn-get-started scrollto">Get Started</a>
+          <Link to="/" class="btn-get-started scrollto" style={{textDecoration:'none'}}>  Get Started </Link>
               </div> </div>
             </div>
         </div></div>
@@ -54,7 +55,7 @@ const Slider = () => {
                 <h2>Learn Without Limits  </h2>
                           <p>Your perspective is always limited by how much you know. Expand your knowledge and you will transform your mind</p>
 
-                <a href="navbar/index.html" class="btn-get-started scrollto">Get Started</a>
+                <a href="navbar/index.html" class="btn-get-started scrollto" style={{textDecoration:'none'}}>Get Started</a>
               </div>
             </div>
   </div>

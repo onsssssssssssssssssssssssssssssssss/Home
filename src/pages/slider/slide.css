@@ -105,7 +105,7 @@
 
 .carousel-item::before {
     content: '';
-    background-color: rgba(0, 0, 0, 0.7);
+    /*background-color: rgba(0, 0, 0, 0.7);*/
     position: absolute;
     height: 80vh;
     width: 100%;

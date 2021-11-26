@@ -24,11 +24,10 @@ const navbar=()=>{
       <Nav.Link href="#pricing"></Nav.Link>
     </Nav>
     <Nav className="menu">
-      <Nav.Link href="home"  className="menu" >Home</Nav.Link>
-      <Nav.Link  href="About" className="menu"> About us </Nav.Link>
-      <Nav.Link  href="Service" className="menu">Service </Nav.Link>
-      <Nav.Link  href="Contact" className="menu">Contact </Nav.Link>
-
+      <Nav.Link href="/home" className="menu" >Home</Nav.Link>
+      <Nav.Link href="/About" className="menu"> About us </Nav.Link>
+      <Nav.Link  href="/Service" className="menu">Service </Nav.Link>
+      <Nav.Link  href="/Contact" className="menu">Contact </Nav.Link>
     </Nav>
   </Navbar.Collapse>
   </Container> 
